@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.TemperatureConveter.com</title>
+</head>
+<body bgcolor="yellow">
+    <center>
+        <h1> Welcome To Temperature Conveter</h1>
+    </center>
+    <br>
+    <hr>
+    <br>
+    <center>
+    <fieldset>
+        <legend>Celsius to Fahrenheit</legend>
+        <label for="temp">Enter the Temperature (in Celsius):-</label>
+        <input type="text" name="temp" id="temp">
+        <script>
+            function tempconverter(c){
+                var temp_fahrenheit=(c*(9/5))+32
+                alert("Temperature in Fahrenheit is "+ temp_fahrenheit)
+
+            }
+        </script>
+        <button type="submit" onclick="tempconverter(temp.value);" value="Convert">convert</button><br>
+        <br>
+
+    </fieldset>
+    </center>
+</body>
+</html>
